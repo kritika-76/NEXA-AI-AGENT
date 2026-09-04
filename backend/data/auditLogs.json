@@ -1,0 +1,1973 @@
+[
+  {
+    "id": "audit_evt_101",
+    "timestamp": "01:21:20 PM",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "User requested a coding laptop under ₹70,000.",
+    "payload": {
+      "rawQuery": "I need a laptop for coding under ₹70,000",
+      "channel": "Web Conversational UI",
+      "sessionId": "sess_89f21ab",
+      "timestampEpoch": 1788510800000
+    }
+  },
+  {
+    "id": "audit_evt_102",
+    "timestamp": "01:21:21 PM",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_STRUCTURED",
+    "status": "SUCCESS",
+    "description": "Hard budget, RAM, storage and delivery constraints extracted.",
+    "payload": {
+      "constraints": {
+        "category": "laptop",
+        "hardBudgetCap": 70000,
+        "primaryUse": "coding",
+        "minRamGb": 16,
+        "minStorageGb": 512,
+        "priority": "performance",
+        "deliverySlaMaxDays": 2
+      }
+    }
+  },
+  {
+    "id": "audit_evt_103",
+    "timestamp": "01:21:24 PM",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "RFP Broadcast to 5 Merchant Agents across A2A Network Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_78942",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ],
+      "timeoutMs": 1500,
+      "protocol": "NEXA-A2A-v2"
+    }
+  },
+  {
+    "id": "audit_evt_104",
+    "timestamp": "01:21:28 PM",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "10 Merchant Offers Evaluated. 6 passed hard policy checks; 4 blocked due to budget cap.",
+    "payload": {
+      "totalOffersReceived": 10,
+      "passedPolicyCount": 6,
+      "blockedPolicyCount": 4,
+      "blockedReasons": {
+        "offer_03": "Budget cap violation (+₹8,990)",
+        "offer_05": "Budget cap violation (+₹18,900)",
+        "offer_08": "Budget cap violation (+₹2,789)",
+        "offer_09": "Budget cap violation (+₹6,990)"
+      }
+    }
+  },
+  {
+    "id": "audit_evt_105",
+    "timestamp": "01:21:35 PM",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Multi-Round Bounded Negotiation initiated with top candidate TechNova Solutions.",
+    "payload": {
+      "candidateOfferId": "offer_01",
+      "targetMerchant": "TechNova Solutions",
+      "initialOfferPrice": 68990,
+      "maxNegotiationRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_106",
+    "timestamp": "01:21:40 PM",
+    "actor": "BUYER AGENT",
+    "eventType": "CONCESSION_REQUESTED",
+    "status": "INFO",
+    "description": "₹1,380 Concession Requested. Reason: Required to meet customer budget preference and performance priority.",
+    "payload": {
+      "round": 1,
+      "requestedDiscount": 1380,
+      "requestedBenefit": "₹1,380 direct price concession + bundled accessories",
+      "rationale": "Customer price sensitivity and priority optimization"
+    }
+  },
+  {
+    "id": "audit_evt_107",
+    "timestamp": "01:21:42 PM",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed. Discount is within the merchant's 8% concession limit and preserves the 12% minimum margin.",
+    "payload": {
+      "merchantMaxConcession": "8.0%",
+      "requestedDiscountPercent": "2.0%",
+      "marginBefore": "16.8%",
+      "marginAfter": "14.8%",
+      "minMarginThreshold": "12.0%",
+      "decision": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_108",
+    "timestamp": "01:21:48 PM",
+    "actor": "CUSTOMER",
+    "eventType": "APPROVAL_REQUESTED",
+    "status": "INFO",
+    "description": "Purchase Approval Requested. Explicit authorization gate presented to user.",
+    "payload": {
+      "item": "Dell Inspiron 15 Pro",
+      "merchant": "TechNova Solutions",
+      "authoritativeFinalTotal": 67610,
+      "totalSavings": 1380
+    }
+  },
+  {
+    "id": "audit_evt_109",
+    "timestamp": "01:22:05 PM",
+    "actor": "CUSTOMER",
+    "eventType": "APPROVAL_GRANTED",
+    "status": "SUCCESS",
+    "description": "Purchase Approved explicitly by customer.",
+    "payload": {
+      "customerId": "cust_rohit_01",
+      "consentTimestamp": "2026-09-04T13:22:05.120Z",
+      "digitalSignature": "sig_rsa256_0x7b2f8a91"
+    }
+  },
+  {
+    "id": "audit_evt_110",
+    "timestamp": "01:22:08 PM",
+    "actor": "RAZORPAY",
+    "eventType": "ORDER_CREATED",
+    "status": "INFO",
+    "description": "Razorpay Test Payment Order Created: order_test_1788512208.",
+    "payload": {
+      "razorpayOrderId": "order_test_1788512208",
+      "amountPaise": 6761000,
+      "currency": "INR",
+      "receipt": "nexa_rcpt_1788512208"
+    }
+  },
+  {
+    "id": "audit_evt_111",
+    "timestamp": "01:22:15 PM",
+    "actor": "RAZORPAY",
+    "eventType": "PAYMENT_RECORDED",
+    "status": "SUCCESS",
+    "description": "Razorpay Test Payment Confirmed. Payment ID: pay_rzp_test_89218.",
+    "payload": {
+      "paymentId": "pay_rzp_test_89218",
+      "orderId": "order_test_1788512208",
+      "status": "captured",
+      "method": "upi",
+      "settlementStatus": "instant_test_settled"
+    }
+  },
+  {
+    "id": "audit_evt_1788522227167_628",
+    "timestamp": "05:13:47 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788522227163 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788522227163",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788522227168_624",
+    "timestamp": "05:13:47 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788522227163",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788522227172_944",
+    "timestamp": "05:13:47 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Initiated multi-round bounded negotiation with TechNova Solutions for Dell Inspiron 15 Pro.",
+    "payload": {
+      "offerId": "offer_01",
+      "merchant": "TechNova Solutions",
+      "originalPrice": 68990,
+      "maxRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_1788522227173_343",
+    "timestamp": "05:13:47 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed: ₹1,380 (2.0%) discount within merchant 8% limit. Remaining margin: 14.8%.",
+    "payload": {
+      "concessionPercent": "2.0%",
+      "marginAfter": "14.8%",
+      "marginThreshold": "12%",
+      "result": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_1788522371443_531",
+    "timestamp": "05:16:11 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788522390045_174",
+    "timestamp": "05:16:30 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788522390045 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788522390045",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788522390047_218",
+    "timestamp": "05:16:30 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788522390045",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788522440223_32",
+    "timestamp": "05:17:20 pm",
+    "actor": "CUSTOMER",
+    "eventType": "FOLLOW_UP_INQUIRY",
+    "status": "INFO",
+    "description": "Customer asked follow-up question: \"kya isme python use kr skte hai ?\". AI Agent generated context-aware answer.",
+    "payload": {
+      "productId": "offer_10",
+      "productName": "Acer Aspire 5 Pro Core i5",
+      "question": "kya isme python use kr skte hai ?",
+      "answer": "Yes, absolutely! The **Acer Aspire 5 Pro Core i5** is exceptionally well suited for Python and VS Code. Its Intel Core i5 1335U combined with 16GB DDR4 and fast 512GB NVMe SSD ensures instant project compilation, smooth syntax highlighting with heavy extensions, and seamless container virtualization in Docker.",
+      "isRequirementChange": false,
+      "updatedRequirement": null
+    }
+  },
+  {
+    "id": "audit_evt_1788522479145_889",
+    "timestamp": "05:17:59 pm",
+    "actor": "CUSTOMER",
+    "eventType": "FOLLOW_UP_INQUIRY",
+    "status": "INFO",
+    "description": "Customer asked follow-up question: \"drawbacks btao\". AI Agent generated context-aware answer.",
+    "payload": {
+      "productId": "offer_10",
+      "productName": "Acer Aspire 5 Pro Core i5",
+      "question": "drawbacks btao",
+      "answer": "Regarding \"drawbacks btao\": The **Acer Aspire 5 Pro Core i5** (₹56,490) is certified for high-reliability development and multitasking with 16GB DDR4 and Intel Core i5 1335U. Feel free to ask about specific tools, software, or delivery terms!",
+      "isRequirementChange": false,
+      "updatedRequirement": null
+    }
+  },
+  {
+    "id": "audit_evt_1788522601866_393",
+    "timestamp": "05:20:01 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788522609540_419",
+    "timestamp": "05:20:09 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788522609540 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788522609540",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788522609542_824",
+    "timestamp": "05:20:09 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788522609540",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788522632130_103",
+    "timestamp": "05:20:32 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Initiated multi-round bounded negotiation with AeroTech Hub for Acer Aspire 5 Pro Core i5.",
+    "payload": {
+      "offerId": "offer_10",
+      "merchant": "AeroTech Hub",
+      "originalPrice": 62990,
+      "maxRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_1788522632132_365",
+    "timestamp": "05:20:32 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed: ₹6,500 (10.3%) discount within merchant 12% limit. Remaining margin: 6.5%.",
+    "payload": {
+      "concessionPercent": "10.3%",
+      "marginAfter": "6.5%",
+      "marginThreshold": "15%",
+      "result": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_1788522632138_207",
+    "timestamp": "05:20:32 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Initiated multi-round bounded negotiation with AeroTech Hub for Acer Aspire 5 Pro Core i5.",
+    "payload": {
+      "offerId": "offer_10",
+      "merchant": "AeroTech Hub",
+      "originalPrice": 62990,
+      "maxRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_1788522632139_179",
+    "timestamp": "05:20:32 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed: ₹6,500 (10.3%) discount within merchant 12% limit. Remaining margin: 6.5%.",
+    "payload": {
+      "concessionPercent": "10.3%",
+      "marginAfter": "6.5%",
+      "marginThreshold": "15%",
+      "result": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_1788522667858_325",
+    "timestamp": "05:21:07 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788522671371_465",
+    "timestamp": "05:21:11 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788522671371 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788522671371",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788522671373_168",
+    "timestamp": "05:21:11 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788522671371",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788523150345_942",
+    "timestamp": "05:29:10 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788523154340_314",
+    "timestamp": "05:29:14 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788523154339 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788523154339",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788523154341_135",
+    "timestamp": "05:29:14 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788523154339",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788523201588_411",
+    "timestamp": "05:30:01 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788523205311_523",
+    "timestamp": "05:30:05 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788523205310 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788523205310",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788523205312_58",
+    "timestamp": "05:30:05 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788523205310",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788523241616_504",
+    "timestamp": "05:30:41 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788523243698_81",
+    "timestamp": "05:30:43 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788523243698 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788523243698",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788523243700_33",
+    "timestamp": "05:30:43 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788523243698",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788523274650_43",
+    "timestamp": "05:31:14 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for machine learning and gaming under ₹75,000\". Extracted target category: laptop, budget: ₹70,000, primary use: gaming.",
+    "payload": {
+      "rawPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "gaming",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "gaming"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788523276471_459",
+    "timestamp": "05:31:16 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for machine learning and gaming under ₹75,000\". Extracted target category: laptop, budget: ₹70,000, primary use: gaming.",
+    "payload": {
+      "rawPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "gaming",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "gaming"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788523277039_564",
+    "timestamp": "05:31:17 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for machine learning and gaming under ₹75,000\". Extracted target category: laptop, budget: ₹70,000, primary use: gaming.",
+    "payload": {
+      "rawPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "gaming",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "gaming"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788523277864_356",
+    "timestamp": "05:31:17 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for machine learning and gaming under ₹75,000\". Extracted target category: laptop, budget: ₹70,000, primary use: gaming.",
+    "payload": {
+      "rawPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "gaming",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "gaming"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788523279728_449",
+    "timestamp": "05:31:19 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for machine learning and gaming under ₹75,000\". Extracted target category: laptop, budget: ₹70,000, primary use: gaming.",
+    "payload": {
+      "rawPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for machine learning and gaming under ₹75,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "gaming",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "gaming"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788524993857_732",
+    "timestamp": "05:59:53 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "EXPLAINABILITY_GENERATED",
+    "status": "INFO",
+    "description": "Generated transparent plain-language explainability for Dell Inspiron 15 (2024): evaluated 5 requirement constraints against merchant passport specs.",
+    "payload": {
+      "product": "Dell Inspiron 15 (2024)",
+      "merchant": "Dell Authorized Store",
+      "matchedRequirements": [
+        "Hard Budget Limit: Under ₹70,000: Verified Match",
+        "Primary Workload: CODING: Verified Match",
+        "Memory Capacity: 16GB: Verified Match",
+        "Delivery & Turnaround: Verified Match",
+        "Merchant Trust & Protection: Verified Match"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788524993866_515",
+    "timestamp": "05:59:53 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "EXPLAINABILITY_GENERATED",
+    "status": "INFO",
+    "description": "Generated transparent plain-language explainability for Dell Inspiron 15 (2024): evaluated 5 requirement constraints against merchant passport specs.",
+    "payload": {
+      "product": "Dell Inspiron 15 (2024)",
+      "merchant": "Dell Authorized Store",
+      "matchedRequirements": [
+        "Hard Budget Limit: Under ₹70,000: Verified Match",
+        "Primary Workload: CODING: Verified Match",
+        "Memory Capacity: 16GB: Verified Match",
+        "Delivery & Turnaround: Verified Match",
+        "Merchant Trust & Protection: Verified Match"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788527384505_923",
+    "timestamp": "06:39:44 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788527387993_44",
+    "timestamp": "06:39:47 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788527387990 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788527387990",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788527387997_876",
+    "timestamp": "06:39:47 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788527387990",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788527537052_410",
+    "timestamp": "06:42:17 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788527540874_357",
+    "timestamp": "06:42:20 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788527540872 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788527540872",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788527540879_452",
+    "timestamp": "06:42:20 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788527540872",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788527545101_33",
+    "timestamp": "06:42:25 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "EXPLAINABILITY_GENERATED",
+    "status": "INFO",
+    "description": "Generated transparent plain-language explainability for Acer Aspire 5 Pro Core i5: evaluated 5 requirement constraints against merchant passport specs.",
+    "payload": {
+      "product": "Acer Aspire 5 Pro Core i5",
+      "merchant": "AeroTech Hub",
+      "matchedRequirements": [
+        "Hard Budget Limit: Under ₹70,000: Verified Match",
+        "Primary Workload: CODING: Verified Match",
+        "Memory Capacity: 16GB: Verified Match",
+        "Delivery & Turnaround: Verified Match",
+        "Merchant Trust & Protection: Verified Match"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788527545118_27",
+    "timestamp": "06:42:25 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "EXPLAINABILITY_GENERATED",
+    "status": "INFO",
+    "description": "Generated transparent plain-language explainability for Acer Aspire 5 Pro Core i5: evaluated 5 requirement constraints against merchant passport specs.",
+    "payload": {
+      "product": "Acer Aspire 5 Pro Core i5",
+      "merchant": "AeroTech Hub",
+      "matchedRequirements": [
+        "Hard Budget Limit: Under ₹70,000: Verified Match",
+        "Primary Workload: CODING: Verified Match",
+        "Memory Capacity: 16GB: Verified Match",
+        "Delivery & Turnaround: Verified Match",
+        "Merchant Trust & Protection: Verified Match"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788529530710_114",
+    "timestamp": "07:15:30 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788529530719_855",
+    "timestamp": "07:15:30 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788529530718 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788529530718",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788529530719_410",
+    "timestamp": "07:15:30 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788529530718",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788529530725_558",
+    "timestamp": "07:15:30 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "EXPLAINABILITY_GENERATED",
+    "status": "INFO",
+    "description": "Generated transparent plain-language explainability for Dell Inspiron 15 (2024): evaluated 5 requirement constraints against merchant passport specs.",
+    "payload": {
+      "product": "Dell Inspiron 15 (2024)",
+      "merchant": "Dell Authorized Store",
+      "matchedRequirements": [
+        "Hard Budget Limit: Under ₹70,000: Verified Match",
+        "Primary Workload: CODING: Verified Match",
+        "Memory Capacity: 16GB: Verified Match",
+        "Delivery & Turnaround: Verified Match",
+        "Merchant Trust & Protection: Verified Match"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788529530733_181",
+    "timestamp": "07:15:30 pm",
+    "actor": "CUSTOMER",
+    "eventType": "FOLLOW_UP_INQUIRY",
+    "status": "INFO",
+    "description": "Customer asked follow-up question: \"Is this good for Python and Docker?\". AI Agent generated context-aware answer.",
+    "payload": {
+      "productId": "prod_lap_01",
+      "productName": "Dell Inspiron 15 (2024)",
+      "question": "Is this good for Python and Docker?",
+      "answer": "Yes, absolutely! The **Dell Inspiron 15 (2024)** is exceptionally well suited for Python and VS Code. Its Intel Core i5 13th Gen (10 Cores) combined with 16GB DDR5 4800MHz and fast 512GB NVMe SSD ensures instant project compilation, smooth syntax highlighting with heavy extensions, and seamless container virtualization in Docker.",
+      "isRequirementChange": false,
+      "updatedRequirement": null
+    }
+  },
+  {
+    "id": "audit_evt_1788529530738_878",
+    "timestamp": "07:15:30 pm",
+    "actor": "RAZORPAY",
+    "eventType": "ORDER_CREATED",
+    "status": "INFO",
+    "description": "Razorpay Test Order created: order_test_1788529530738_f7869 for ₹67,610.",
+    "payload": {
+      "razorpayOrderId": "order_test_1788529530738_f7869",
+      "amountPaise": 6761000,
+      "currency": "INR",
+      "receipt": "nexa_rcpt_1788529530738"
+    }
+  },
+  {
+    "id": "audit_evt_1788529535412_39",
+    "timestamp": "07:15:35 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788529535412 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788529535412",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788529535413_793",
+    "timestamp": "07:15:35 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788529535412",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788529535417_274",
+    "timestamp": "07:15:35 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Initiated multi-round bounded negotiation with TechNova Solutions for Dell Inspiron 15 Pro.",
+    "payload": {
+      "offerId": "offer_01",
+      "merchant": "TechNova Solutions",
+      "originalPrice": 68990,
+      "maxRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_1788529535418_867",
+    "timestamp": "07:15:35 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed: ₹1,380 (2.0%) discount within merchant 8% limit. Remaining margin: 14.8%.",
+    "payload": {
+      "concessionPercent": "2.0%",
+      "marginAfter": "14.8%",
+      "marginThreshold": "12%",
+      "result": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_1788529612341_168",
+    "timestamp": "07:16:52 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788529617026_50",
+    "timestamp": "07:16:57 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788529617026 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788529617026",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788529617030_365",
+    "timestamp": "07:16:57 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788529617026",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788529622400_874",
+    "timestamp": "07:17:02 pm",
+    "actor": "CUSTOMER",
+    "eventType": "FOLLOW_UP_INQUIRY",
+    "status": "INFO",
+    "description": "Customer asked follow-up question: \"Is this suitable for Python and VS Code?\". AI Agent generated context-aware answer.",
+    "payload": {
+      "productId": "offer_10",
+      "productName": "Acer Aspire 5 Pro Core i5",
+      "question": "Is this suitable for Python and VS Code?",
+      "answer": "Yes, absolutely! The **Acer Aspire 5 Pro Core i5** is exceptionally well suited for Python and VS Code. Its Intel Core i5 1335U combined with 16GB DDR4 and fast 512GB NVMe SSD ensures instant project compilation, smooth syntax highlighting with heavy extensions, and seamless container virtualization in Docker.",
+      "isRequirementChange": false,
+      "updatedRequirement": null
+    }
+  },
+  {
+    "id": "audit_evt_1788529663377_57",
+    "timestamp": "07:17:43 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788529665087_943",
+    "timestamp": "07:17:45 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788529665087 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788529665087",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788529665089_682",
+    "timestamp": "07:17:45 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788529665087",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788529705851_187",
+    "timestamp": "07:18:25 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Initiated multi-round bounded negotiation with AeroTech Hub for Acer Aspire 5 Pro Core i5.",
+    "payload": {
+      "offerId": "offer_10",
+      "merchant": "AeroTech Hub",
+      "originalPrice": 62990,
+      "maxRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_1788529705853_737",
+    "timestamp": "07:18:25 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed: ₹6,500 (10.3%) discount within merchant 12% limit. Remaining margin: 6.5%.",
+    "payload": {
+      "concessionPercent": "10.3%",
+      "marginAfter": "6.5%",
+      "marginThreshold": "15%",
+      "result": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_1788529705856_486",
+    "timestamp": "07:18:25 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Initiated multi-round bounded negotiation with AeroTech Hub for Acer Aspire 5 Pro Core i5.",
+    "payload": {
+      "offerId": "offer_10",
+      "merchant": "AeroTech Hub",
+      "originalPrice": 62990,
+      "maxRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_1788529705858_133",
+    "timestamp": "07:18:25 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed: ₹6,500 (10.3%) discount within merchant 12% limit. Remaining margin: 6.5%.",
+    "payload": {
+      "concessionPercent": "10.3%",
+      "marginAfter": "6.5%",
+      "marginThreshold": "15%",
+      "result": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_1788529835844_96",
+    "timestamp": "07:20:35 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788529870134_223",
+    "timestamp": "07:21:10 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788529870133 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788529870133",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788529870135_40",
+    "timestamp": "07:21:10 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788529870133",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788530028316_333",
+    "timestamp": "07:23:48 pm",
+    "actor": "CUSTOMER",
+    "eventType": "FOLLOW_UP_INQUIRY",
+    "status": "INFO",
+    "description": "Customer asked follow-up question: \"Is this suitable for Python and VS Code?\". AI Agent generated context-aware answer.",
+    "payload": {
+      "productId": "offer_10",
+      "productName": "Acer Aspire 5 Pro Core i5",
+      "question": "Is this suitable for Python and VS Code?",
+      "answer": "Yes, absolutely! The **Acer Aspire 5 Pro Core i5** is exceptionally well suited for Python and VS Code. Its Intel Core i5 1335U combined with 16GB DDR4 and fast 512GB NVMe SSD ensures instant project compilation, smooth syntax highlighting with heavy extensions, and seamless container virtualization in Docker.",
+      "isRequirementChange": false,
+      "updatedRequirement": null
+    }
+  },
+  {
+    "id": "audit_evt_1788530740930_73",
+    "timestamp": "07:35:40 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788530747004_754",
+    "timestamp": "07:35:47 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788530747003 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788530747003",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788530747006_787",
+    "timestamp": "07:35:47 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788530747003",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788530886077_521",
+    "timestamp": "07:38:06 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788530890332_912",
+    "timestamp": "07:38:10 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788530890331 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788530890331",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788530890334_393",
+    "timestamp": "07:38:10 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788530890331",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788530916524_991",
+    "timestamp": "07:38:36 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788530921662_923",
+    "timestamp": "07:38:41 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788530921662 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788530921662",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788530921664_280",
+    "timestamp": "07:38:41 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788530921662",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788530954480_899",
+    "timestamp": "07:39:14 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788530957220_192",
+    "timestamp": "07:39:17 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788530957220 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788530957220",
+      "budgetCap": 70000,
+      "priority": "value",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788530957223_540",
+    "timestamp": "07:39:17 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788530957220",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 94/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788531466744_328",
+    "timestamp": "07:47:46 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788531497926_162",
+    "timestamp": "07:48:17 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788531497925 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788531497925",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788531497928_733",
+    "timestamp": "07:48:17 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788531497925",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788531583663_491",
+    "timestamp": "07:49:43 pm",
+    "actor": "CUSTOMER",
+    "eventType": "FOLLOW_UP_INQUIRY",
+    "status": "INFO",
+    "description": "Customer asked follow-up question: \"Is this suitable for Python and VS Code?\". AI Agent generated context-aware answer.",
+    "payload": {
+      "productId": "offer_10",
+      "productName": "Acer Aspire 5 Pro Core i5",
+      "question": "Is this suitable for Python and VS Code?",
+      "answer": "Yes, absolutely! The **Acer Aspire 5 Pro Core i5** is exceptionally well suited for Python and VS Code. Its Intel Core i5 1335U combined with 16GB DDR4 and fast 512GB NVMe SSD ensures instant project compilation, smooth syntax highlighting with heavy extensions, and seamless container virtualization in Docker.",
+      "isRequirementChange": false,
+      "updatedRequirement": null
+    }
+  },
+  {
+    "id": "audit_evt_1788531900894_872",
+    "timestamp": "07:55:00 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788531905533_384",
+    "timestamp": "07:55:05 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788531905532 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788531905532",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788531905536_555",
+    "timestamp": "07:55:05 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788531905532",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788531917507_151",
+    "timestamp": "07:55:17 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788531920284_673",
+    "timestamp": "07:55:20 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788531920284 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788531920284",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788531920286_301",
+    "timestamp": "07:55:20 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788531920284",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  },
+  {
+    "id": "audit_evt_1788531924467_785",
+    "timestamp": "07:55:24 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Initiated multi-round bounded negotiation with AeroTech Hub for Acer Aspire 5 Pro Core i5.",
+    "payload": {
+      "offerId": "offer_10",
+      "merchant": "AeroTech Hub",
+      "originalPrice": 62990,
+      "maxRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_1788531924469_199",
+    "timestamp": "07:55:24 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed: ₹6,500 (10.3%) discount within merchant 12% limit. Remaining margin: 6.5%.",
+    "payload": {
+      "concessionPercent": "10.3%",
+      "marginAfter": "6.5%",
+      "marginThreshold": "15%",
+      "result": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_1788531924477_922",
+    "timestamp": "07:55:24 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "NEGOTIATION_STARTED",
+    "status": "INFO",
+    "description": "Initiated multi-round bounded negotiation with AeroTech Hub for Acer Aspire 5 Pro Core i5.",
+    "payload": {
+      "offerId": "offer_10",
+      "merchant": "AeroTech Hub",
+      "originalPrice": 62990,
+      "maxRounds": 3
+    }
+  },
+  {
+    "id": "audit_evt_1788531924479_449",
+    "timestamp": "07:55:24 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "CONCESSION_ALLOWED",
+    "status": "SUCCESS",
+    "description": "Concession Allowed: ₹6,500 (10.3%) discount within merchant 12% limit. Remaining margin: 6.5%.",
+    "payload": {
+      "concessionPercent": "10.3%",
+      "marginAfter": "6.5%",
+      "marginThreshold": "15%",
+      "result": "ALLOWED_SAFE"
+    }
+  },
+  {
+    "id": "audit_evt_1788532005302_452",
+    "timestamp": "07:56:45 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "INTENT_RECEIVED",
+    "status": "INFO",
+    "description": "Customer natural prompt parsed: \"I need a laptop for coding under ₹70,000\". Extracted target category: laptop, budget: ₹70,000, primary use: coding.",
+    "payload": {
+      "rawPrompt": "I need a laptop for coding under ₹70,000",
+      "extractedConstraints": {
+        "originalPrompt": "I need a laptop for coding under ₹70,000",
+        "category": "laptop",
+        "budget": 70000,
+        "primaryUse": "coding",
+        "priority": "performance",
+        "ram": "16GB",
+        "delivery": "express",
+        "detectedKeywords": [
+          "laptop",
+          "coding"
+        ]
+      }
+    }
+  },
+  {
+    "id": "audit_evt_1788532008397_469",
+    "timestamp": "07:56:48 pm",
+    "actor": "BUYER AGENT",
+    "eventType": "RFP_BROADCAST",
+    "status": "INFO",
+    "description": "Buyer Agent broadcasted RFP rfp_live_1788532008397 to 5 verified Merchant Nodes across A2A Protocol v2.1.",
+    "payload": {
+      "rfpId": "rfp_live_1788532008397",
+      "budgetCap": 70000,
+      "priority": "performance",
+      "merchantsPinged": [
+        "TechNova Solutions",
+        "Apex Global Electronics",
+        "CyberByte Systems",
+        "Quantum Store Direct",
+        "AeroTech Hub"
+      ]
+    }
+  },
+  {
+    "id": "audit_evt_1788532008404_648",
+    "timestamp": "07:56:48 pm",
+    "actor": "POLICY ENGINE",
+    "eventType": "POLICY_EVALUATION",
+    "status": "SUCCESS",
+    "description": "Policy Engine evaluated 10 merchant offers: 5 passed hard policy constraints; 5 blocked due to budget cap.",
+    "payload": {
+      "rfpId": "rfp_live_1788532008397",
+      "totalOffers": 10,
+      "passedCount": 5,
+      "blockedCount": 5,
+      "topPick": "Acer Aspire 5 Pro Core i5 by AeroTech Hub (Utility: 96/100)"
+    }
+  }
+]

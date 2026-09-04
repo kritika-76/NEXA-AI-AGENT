@@ -1,0 +1,187 @@
+[
+  {
+    "id": "merch_technova",
+    "name": "TechNova Solutions",
+    "tagline": "Premium Official Enterprise & Developer Gear",
+    "merchantType": "Enterprise & Developer Authorized",
+    "rating": 4.9,
+    "reviewCount": 3840,
+    "verifiedOrders": 3840,
+    "responseTime": "< 300ms",
+    "deliverySla": "1–3 Business Days (Express Available)",
+    "returnPolicy": "14-Day Free Returns",
+    "warranty": "12-Month Official Manufacturer Warranty",
+    "negotiationLimits": {
+      "maxConcessionPercent": 8,
+      "minMarginPercent": 12,
+      "autoApproveShippingDiscount": true,
+      "bundleDiscountAllowed": true
+    },
+    "passport": {
+      "merchantId": "did:nexa:merch:technova:0x89f2a",
+      "verificationStatus": "Tier-1 Verified",
+      "authorizedBrands": ["Dell", "Lenovo", "Logitech", "Intel"],
+      "fulfillmentHubs": ["Bengaluru Hub 1", "Mumbai West DC", "Delhi NCR Hub"],
+      "capabilities": [
+        "Premium Developer Gear",
+        "Brand Authorized Direct Reseller",
+        "Priority 24/7 Enterprise Support",
+        "AI Negotiation Enabled (A2A Protocol v2.1)",
+        "Razorpay Direct Test & Live Ready"
+      ],
+      "inventoryTelemetry": {
+        "activeSkuCount": 420,
+        "liveInStockRate": "99.4%",
+        "averageDispatchTimeHours": 4.2
+      }
+    }
+  },
+  {
+    "id": "merch_apex",
+    "name": "Apex Global Electronics",
+    "tagline": "Ultra-Fast Logistics & High-Performance Computing",
+    "merchantType": "Hyper-Fast Logistics Partner",
+    "rating": 4.8,
+    "reviewCount": 5120,
+    "verifiedOrders": 5120,
+    "responseTime": "< 250ms",
+    "deliverySla": "Same-Day / Next-Day Delivery",
+    "returnPolicy": "10-Day Hassle-Free Returns",
+    "warranty": "24-Month Brand Warranty",
+    "negotiationLimits": {
+      "maxConcessionPercent": 6,
+      "minMarginPercent": 14,
+      "autoApproveShippingDiscount": true,
+      "bundleDiscountAllowed": true
+    },
+    "passport": {
+      "merchantId": "did:nexa:merch:apex:0x71c3b",
+      "verificationStatus": "Tier-1 Verified",
+      "authorizedBrands": ["Lenovo", "Acer", "Anker", "Belkin"],
+      "fulfillmentHubs": ["Bengaluru Express", "Hyderabad Central", "Chennai North"],
+      "capabilities": [
+        "Hyper-Fast Delivery Network",
+        "Automated AI Logistics API",
+        "Express Dispatch Guaranteed",
+        "Smart Margin Safeguard",
+        "Razorpay Instant Settlement Ready"
+      ],
+      "inventoryTelemetry": {
+        "activeSkuCount": 680,
+        "liveInStockRate": "98.8%",
+        "averageDispatchTimeHours": 2.1
+      }
+    }
+  },
+  {
+    "id": "merch_cyberbyte",
+    "name": "CyberByte Systems",
+    "tagline": "Custom AI & Deep Learning Workstations",
+    "merchantType": "Specialized GPU & Gaming Builder",
+    "rating": 4.7,
+    "reviewCount": 2490,
+    "verifiedOrders": 2490,
+    "responseTime": "< 450ms",
+    "deliverySla": "2–4 Business Days",
+    "returnPolicy": "7-Day Technical Replacement",
+    "warranty": "12-Month Component Warranty",
+    "negotiationLimits": {
+      "maxConcessionPercent": 10,
+      "minMarginPercent": 11,
+      "autoApproveShippingDiscount": false,
+      "bundleDiscountAllowed": true
+    },
+    "passport": {
+      "merchantId": "did:nexa:merch:cyberbyte:0x44a9e",
+      "verificationStatus": "Tier-1 Verified",
+      "authorizedBrands": ["ASUS ROG", "NVIDIA", "Razer", "MSI"],
+      "fulfillmentHubs": ["Pune Hardware Zone", "Noida Tech Park"],
+      "capabilities": [
+        "Dedicated PyTorch/ML Hardware Testing",
+        "Overclocking & Thermal Audits",
+        "Custom RAM/SSD Upgrades",
+        "Dynamic A2A Concession Protocol",
+        "Razorpay Test Mode Ready"
+      ],
+      "inventoryTelemetry": {
+        "activeSkuCount": 310,
+        "liveInStockRate": "96.5%",
+        "averageDispatchTimeHours": 6.8
+      }
+    }
+  },
+  {
+    "id": "merch_quantum",
+    "name": "Quantum Store Direct",
+    "tagline": "Flagship Ultrabooks, OLED Displays & Premium Laptops",
+    "merchantType": "Flagship Consumer Electronics",
+    "rating": 4.9,
+    "reviewCount": 4600,
+    "verifiedOrders": 4600,
+    "responseTime": "< 320ms",
+    "deliverySla": "1–2 Business Days",
+    "returnPolicy": "14-Day Free Returns",
+    "warranty": "12-Month Official Apple & Acer Warranty",
+    "negotiationLimits": {
+      "maxConcessionPercent": 7,
+      "minMarginPercent": 13,
+      "autoApproveShippingDiscount": true,
+      "bundleDiscountAllowed": true
+    },
+    "passport": {
+      "merchantId": "did:nexa:merch:quantum:0x19e8d",
+      "verificationStatus": "Tier-1 Verified",
+      "authorizedBrands": ["Apple", "Acer", "HP", "Samsung"],
+      "fulfillmentHubs": ["Bengaluru Outer Ring Road", "Gurgaon CyberCity"],
+      "capabilities": [
+        "Apple & Windows Certified Technicians",
+        "OLED Calibration Guarantee",
+        "Student & Startup Subsidy Verification",
+        "A2A Multi-Round Negotiation Ready",
+        "Razorpay Standard Ready"
+      ],
+      "inventoryTelemetry": {
+        "activeSkuCount": 540,
+        "liveInStockRate": "99.1%",
+        "averageDispatchTimeHours": 3.4
+      }
+    }
+  },
+  {
+    "id": "merch_aerotech",
+    "name": "AeroTech Hub",
+    "tagline": "Audiophile Headsets, Ergonomic Peripherals & Workstation Bags",
+    "merchantType": "Audio & Ergonomic Accessories",
+    "rating": 4.8,
+    "reviewCount": 6120,
+    "verifiedOrders": 6120,
+    "responseTime": "< 280ms",
+    "deliverySla": "1–3 Business Days",
+    "returnPolicy": "14-Day Return Policy",
+    "warranty": "12-Month Replacement Warranty",
+    "negotiationLimits": {
+      "maxConcessionPercent": 12,
+      "minMarginPercent": 15,
+      "autoApproveShippingDiscount": true,
+      "bundleDiscountAllowed": true
+    },
+    "passport": {
+      "merchantId": "did:nexa:merch:aerotech:0x33b1f",
+      "verificationStatus": "Tier-1 Verified",
+      "authorizedBrands": ["Sony", "Sennheiser", "Logitech", "DeskPro"],
+      "fulfillmentHubs": ["Mumbai Logistics Center", "Bengaluru South"],
+      "capabilities": [
+        "Acoustic Lab Calibrated Audio",
+        "Ergonomic Posture Solutions",
+        "Instant Add-On Bundle Discount Engine",
+        "Real-Time Inventory Stream",
+        "Razorpay UPI/Card Ready"
+      ],
+      "inventoryTelemetry": {
+        "activeSkuCount": 890,
+        "liveInStockRate": "99.7%",
+        "averageDispatchTimeHours": 2.5
+      }
+    }
+  }
+]
