@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NEXA — Your AI Shopping Agent
 > **“Answer a few questions. Find what truly fits you.”**
 > 
@@ -110,3 +111,7 @@ npm run dev
 2. **Hero Feature — Requirements Memory**: Interactive editable memory chips that immediately recalibrate product scores upon edit.
 3. **Complete Explainability**: No black boxes. Customers see the exact reasons, requirement checks, and trade-offs.
 4. **Agentic Commerce Growth**: Merchants gain real-time visibility into intent trends, unmet customer demands, and AOV uplift from companion bundling.
+=======
+# NEXA-AI-AGENT
+ AI Growth &amp; Agentic Commerce track.”
+>>>>>>> origin/main
