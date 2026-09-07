@@ -1,0 +1,693 @@
+[
+  {
+    "id": "prod_lap_01",
+    "name": "Dell Inspiron 15 (2024)",
+    "category": "laptop",
+    "merchant": "Dell Authorized Store",
+    "price": 67610,
+    "originalPrice": 74990,
+    "rating": 4.6,
+    "reviewCount": 842,
+    "deliveryDays": 2,
+    "deliveryRange": "2–4 Days",
+    "stock": 24,
+    "warranty": "12 Months On-Site",
+    "returnPolicy": "14 Days Hassle-Free",
+    "offers": "2% Student Discount with UniDays",
+    "bestFor": ["Coding", "Full-Stack Development", "College"],
+    "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "processor": "Intel Core i5 13th Gen (10 Cores)",
+      "ram": "16GB DDR5 4800MHz",
+      "ramGb": 16,
+      "storage": "512GB NVMe M.2 SSD",
+      "storageGb": 512,
+      "display": "15.6\" FHD 120Hz Anti-Glare (250 nits)",
+      "battery": "54Wh (Up to 8.5 Hours)",
+      "weight": "1.65 kg",
+      "gpu": "Intel Iris Xe Graphics",
+      "os": "Windows 11 Home"
+    },
+    "tags": ["coding", "college", "programming", "multitasking", "office", "budget-performance"],
+    "personaFit": ["developer", "student", "freelancer", "office worker"],
+    "keyHighlights": [
+      "Smooth multitasking with 16GB DDR5 RAM",
+      "Crisp 120Hz display with anti-glare for long coding sessions",
+      "Fast charging: 80% in 60 minutes",
+      "Lightweight chassis for easy daily commute"
+    ],
+    "strengths": {
+      "coding": 96,
+      "college": 92,
+      "gaming": 65,
+      "battery": 88,
+      "value": 95
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 98,
+      "semanticKeywords": ["python", "vscode", "docker", "web development", "c++", "student laptop", "fast ssd", "anti-glare"],
+      "verifiedUseCases": ["Full-stack development", "College coursework", "Office productivity"]
+    },
+    "compatibleProducts": ["Wireless Mouse", "Laptop Stand", "Laptop Bag", "65W GaN Charger"],
+    "crossSellIds": ["prod_acc_01", "prod_acc_07", "prod_acc_08"]
+  },
+  {
+    "id": "prod_lap_02",
+    "name": "Lenovo IdeaPad Slim 5 AMD",
+    "category": "laptop",
+    "merchant": "Lenovo Direct India",
+    "price": 64990,
+    "originalPrice": 72000,
+    "rating": 4.5,
+    "reviewCount": 620,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 18,
+    "warranty": "24 Months Premium Care",
+    "returnPolicy": "14 Days Return",
+    "offers": "Flat ₹1,500 Instant Cashback on UPI",
+    "bestFor": ["All-Day Battery", "Coding on the go", "College"],
+    "image": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "processor": "AMD Ryzen 7 7730U (8 Cores / 16 Threads)",
+      "ram": "16GB LPDDR4x 4266MHz",
+      "ramGb": 16,
+      "storage": "512GB PCIe Gen4 SSD",
+      "storageGb": 512,
+      "display": "14\" WUXGA IPS 300 nits 100% sRGB",
+      "battery": "56.6Wh (Up to 10 Hours)",
+      "weight": "1.46 kg",
+      "gpu": "AMD Radeon Graphics",
+      "os": "Windows 11 Home"
+    },
+    "tags": ["coding", "college", "battery", "lightweight", "multitasking", "budget-performance"],
+    "personaFit": ["developer", "traveler", "college student"],
+    "keyHighlights": [
+      "8-Core Ryzen 7 processor compiles code ultra-fast",
+      "Up to 10 hours battery life on single charge",
+      "Super compact 1.46kg all-metal sleek build",
+      "FHD Web camera with physical privacy shutter"
+    ],
+    "strengths": {
+      "coding": 94,
+      "college": 96,
+      "gaming": 68,
+      "battery": 97,
+      "value": 96
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 96,
+      "semanticKeywords": ["ryzen 7", "multicore", "long battery", "portable", "linux friendly", "coding on the go"],
+      "verifiedUseCases": ["Backend programming", "Campus use", "Data analytics"]
+    },
+    "compatibleProducts": ["Wireless Mouse", "Laptop Stand", "65W GaN Charger"],
+    "crossSellIds": ["prod_acc_01", "prod_acc_07", "prod_acc_02"]
+  },
+  {
+    "id": "prod_lap_03",
+    "name": "ASUS TUF Gaming F15",
+    "category": "laptop",
+    "merchant": "ASUS ROG Store",
+    "price": 69990,
+    "originalPrice": 79990,
+    "rating": 4.7,
+    "reviewCount": 1120,
+    "deliveryDays": 2,
+    "deliveryRange": "2–3 Days",
+    "stock": 14,
+    "warranty": "12 Months Global Warranty",
+    "returnPolicy": "7 Days Replacement",
+    "offers": "Free 3 Months Xbox Game Pass Ultimate",
+    "bestFor": ["Gaming & AI/ML", "Heavy Compiling", "PyTorch/TensorFlow"],
+    "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "processor": "Intel Core i5 12500H (12 Cores / 16 Threads)",
+      "ram": "16GB DDR4 3200MHz (Expandable to 32GB)",
+      "ramGb": 16,
+      "storage": "512GB NVMe SSD + Extra M.2 Slot",
+      "storageGb": 512,
+      "display": "15.6\" FHD 144Hz Adaptive-Sync",
+      "battery": "48Wh (Up to 5 Hours)",
+      "weight": "2.20 kg",
+      "gpu": "NVIDIA GeForce RTX 3050 4GB GDDR6",
+      "os": "Windows 11 Home"
+    },
+    "tags": ["gaming", "coding", "performance", "machine learning", "gpu", "high-power"],
+    "personaFit": ["gamer", "AI student", "game developer", "creator"],
+    "keyHighlights": [
+      "Dedicated RTX 3050 GPU for ML models and AAA gaming",
+      "12-Core H-series processor for heavy compilation & builds",
+      "Dual fans with self-cleaning anti-dust thermal system",
+      "Military-grade MIL-STD-810H durability"
+    ],
+    "strengths": {
+      "coding": 92,
+      "college": 78,
+      "gaming": 98,
+      "battery": 65,
+      "value": 91
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 97,
+      "semanticKeywords": ["nvidia rtx", "gpu coding", "pytorch", "tensorflow", "unity", "unreal engine", "144hz"],
+      "verifiedUseCases": ["Game Development", "Deep Learning basics", "Heavy Gaming"]
+    },
+    "compatibleProducts": ["Gaming Mouse", "Laptop Cooling Stand", "Gaming Headset"],
+    "crossSellIds": ["prod_acc_01", "prod_acc_07", "prod_acc_04"]
+  },
+  {
+    "id": "prod_lap_04",
+    "name": "Acer Swift Go 14 OLED (Intel Core Ultra 5)",
+    "category": "laptop",
+    "merchant": "Acer Flagship India",
+    "price": 79990,
+    "originalPrice": 89990,
+    "rating": 4.8,
+    "reviewCount": 430,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 10,
+    "warranty": "12 Months International",
+    "returnPolicy": "14 Days Return",
+    "offers": "Free MS Office 2021 Lifetime",
+    "bestFor": ["AI Boosted Coding", "Ultra Display", "Portability"],
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "processor": "Intel Core Ultra 5 125H (14 Cores / NPU AI Engine)",
+      "ram": "16GB LPDDR5x 6400MHz",
+      "ramGb": 16,
+      "storage": "512GB PCIe Gen4 SSD",
+      "storageGb": 512,
+      "display": "14\" 2.8K 90Hz OLED 100% DCI-P3 (500 nits)",
+      "battery": "65Wh (Up to 11.5 Hours)",
+      "weight": "1.32 kg",
+      "gpu": "Intel Arc Graphics",
+      "os": "Windows 11 Home"
+    },
+    "tags": ["ai-pc", "oled", "coding", "performance", "lightweight", "battery"],
+    "personaFit": ["developer", "AI researcher", "traveling engineer"],
+    "keyHighlights": [
+      "Brand new Intel Core Ultra 5 with dedicated AI Neural Processing Unit (NPU)",
+      "Stunning 2.8K OLED screen with deep ink blacks for reduced eye strain",
+      "Featherlight 1.32kg premium aluminium chassis",
+      "Intel Arc graphics with 2x faster hardware rendering"
+    ],
+    "strengths": {
+      "coding": 99,
+      "college": 95,
+      "gaming": 80,
+      "battery": 96,
+      "value": 92
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 99,
+      "semanticKeywords": ["core ultra", "npu", "intel ai", "oled laptop", "under 80000", "swift go 14"],
+      "verifiedUseCases": ["On-device Local LLMs", "React/Python Development", "Media Creation"]
+    },
+    "compatibleProducts": ["Wireless Mouse", "Laptop Stand", "65W GaN Charger"],
+    "crossSellIds": ["prod_acc_01", "prod_acc_07", "prod_acc_02"]
+  },
+  {
+    "id": "prod_lap_05",
+    "name": "HP Pavilion 14 (13th Gen)",
+    "category": "laptop",
+    "merchant": "HP Official Hub",
+    "price": 58990,
+    "originalPrice": 66990,
+    "rating": 4.4,
+    "reviewCount": 490,
+    "deliveryDays": 2,
+    "deliveryRange": "2–4 Days",
+    "stock": 30,
+    "warranty": "12 Months On-Site",
+    "returnPolicy": "14 Days Return",
+    "offers": "Flat ₹2,000 Bank Discount",
+    "bestFor": ["Budget Coding", "College Coursework", "Office"],
+    "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "processor": "Intel Core i5 1335U (10 Cores)",
+      "ram": "16GB DDR4 3200MHz",
+      "ramGb": 16,
+      "storage": "512GB NVMe SSD",
+      "storageGb": 512,
+      "display": "14\" FHD IPS Micro-Edge",
+      "battery": "43Wh (Up to 7.5 Hours)",
+      "weight": "1.41 kg",
+      "gpu": "Intel Iris Xe Graphics",
+      "os": "Windows 11 Home"
+    },
+    "tags": ["budget-friendly", "college", "coding", "office", "lightweight"],
+    "personaFit": ["college student", "first-time programmer", "business user"],
+    "keyHighlights": [
+      "Unbeatable price-to-performance for 16GB RAM under ₹60K",
+      "Audio tuned by B&O with dual stereo speakers",
+      "Fast fingerprint reader for seamless login",
+      "Compact micro-edge border display"
+    ],
+    "strengths": {
+      "coding": 89,
+      "college": 94,
+      "gaming": 60,
+      "battery": 82,
+      "value": 98
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 95,
+      "semanticKeywords": ["budget laptop", "under 60k", "hp", "college laptop", "16gb under 60000"],
+      "verifiedUseCases": ["College assignments", "Junior coding projects", "Remote work"]
+    },
+    "compatibleProducts": ["Wireless Mouse", "Laptop Stand", "Laptop Bag"],
+    "crossSellIds": ["prod_acc_01", "prod_acc_07", "prod_acc_08"]
+  },
+  {
+    "id": "prod_aud_01",
+    "name": "Sony WH-1000XM5 Wireless ANC",
+    "category": "headphones",
+    "merchant": "Sony Center",
+    "price": 28990,
+    "originalPrice": 34990,
+    "rating": 4.9,
+    "reviewCount": 3810,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 16,
+    "warranty": "12 Months Sony India Warranty",
+    "returnPolicy": "10 Days Return",
+    "offers": "Complimentary Hard Travel Case",
+    "bestFor": ["Flight Travel", "Noisy Office Focus", "Audiophile Sound"],
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "anc": "Industry-leading 8-mic Auto NC Optimizer",
+      "battery": "30 Hours with ANC (40 Hours without)",
+      "drivers": "30mm Precision Engineered Carbon Fiber",
+      "connectivity": "Bluetooth 5.2 / LDAC / Multipoint 2 Devices",
+      "weight": "250g",
+      "charging": "3 min quick charge for 3 hours playback"
+    },
+    "tags": ["travel", "commute", "anc", "audiophile", "comfort", "premium", "long-battery"],
+    "personaFit": ["frequent flyer", "commuter", "music enthusiast", "remote developer"],
+    "keyHighlights": [
+      "Silences aircraft cabin and noisy metro commutes effortlessly",
+      "Ultra-soft lightweight fit designed for 8+ hour continuous wear",
+      "Crystal-clear call quality with 4 beamforming microphones",
+      "Multipoint connection seamlessly swaps between Laptop & Phone"
+    ],
+    "strengths": {
+      "travel": 100,
+      "bass": 94,
+      "comfort": 98,
+      "battery": 97,
+      "calls": 96
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 99,
+      "semanticKeywords": ["noise cancelling", "flights", "travel headphones", "sony xm5", "airplane", "coding focus"],
+      "verifiedUseCases": ["Flight Travel", "Noisy Office Focus", "High-Resolution Audio"]
+    },
+    "compatibleProducts": ["Hard Shell Case", "Airplane Adapter", "Headphone Stand"],
+    "crossSellIds": ["prod_acc_05", "prod_acc_02"]
+  },
+  {
+    "id": "prod_aud_02",
+    "name": "Sennheiser Momentum 4 Wireless",
+    "category": "headphones",
+    "merchant": "Sennheiser Official",
+    "price": 24990,
+    "originalPrice": 34990,
+    "rating": 4.7,
+    "reviewCount": 1420,
+    "deliveryDays": 2,
+    "deliveryRange": "2–3 Days",
+    "stock": 12,
+    "warranty": "24 Months Sennheiser Warranty",
+    "returnPolicy": "14 Days Return",
+    "offers": "Flat ₹2,000 Bundle Rebate",
+    "bestFor": ["Long Distance Travel", "Audiophile Bass", "60hr Battery"],
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "anc": "Adaptive Noise Cancellation & Transparency Mode",
+      "battery": "Monster 60 Hours Playtime",
+      "drivers": "42mm Audiophile Transducer",
+      "connectivity": "Bluetooth 5.2 / aptX Adaptive / AAC",
+      "weight": "293g",
+      "charging": "USB-C Fast Charging"
+    },
+    "tags": ["battery-king", "audiophile", "travel", "sound-quality", "bass"],
+    "personaFit": ["audiophile", "traveler", "podcast lover", "gamer"],
+    "keyHighlights": [
+      "Unmatched 60-hour battery life: travel for 2 weeks without charging",
+      "Signature Sennheiser soundstage with rich, dynamic deep bass",
+      "Customizable EQ with Sound Personalization mode",
+      "Fold-flat case with airline adapter included"
+    ],
+    "strengths": {
+      "travel": 94,
+      "bass": 98,
+      "comfort": 92,
+      "battery": 100,
+      "calls": 89
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 97,
+      "semanticKeywords": ["60 hour battery", "sennheiser", "audiophile sound", "deep bass", "travel"],
+      "verifiedUseCases": ["Long Distance Travel", "Music Production", "Deep Focus Work"]
+    },
+    "compatibleProducts": ["Hard Shell Case", "65W GaN Charger"],
+    "crossSellIds": ["prod_acc_05", "prod_acc_02"]
+  },
+  {
+    "id": "prod_aud_03",
+    "name": "Sony WH-CH720N Noise Cancelling",
+    "category": "headphones",
+    "merchant": "Sony Center",
+    "price": 9990,
+    "originalPrice": 14990,
+    "rating": 4.5,
+    "reviewCount": 2150,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 45,
+    "warranty": "12 Months Warranty",
+    "returnPolicy": "14 Days Return",
+    "offers": "5% Student Discount",
+    "bestFor": ["Daily Metro Commute", "Budget ANC", "Lightweight Study"],
+    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "anc": "Dual Noise Sensor with V1 Integrated Processor",
+      "battery": "35 Hours with ANC on (50 Hours ANC off)",
+      "drivers": "30mm Dynamic Driver",
+      "connectivity": "Bluetooth 5.2 / Multipoint Connection",
+      "weight": "192g (Ultralight)",
+      "charging": "USB-C Quick Charge"
+    },
+    "tags": ["budget-anc", "travel", "commute", "lightweight", "college", "value"],
+    "personaFit": ["student", "budget traveler", "daily commuter"],
+    "keyHighlights": [
+      "Sony's lightest overhead ANC headphones at just 192g",
+      "Dual noise sensor technology reduces commute rumble",
+      "Clear voice calls with Precise Voice Pickup Technology",
+      "Exceptional value under ₹10,000"
+    ],
+    "strengths": {
+      "travel": 90,
+      "bass": 88,
+      "comfort": 95,
+      "battery": 94,
+      "calls": 88
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 95,
+      "semanticKeywords": ["under 10000", "budget anc", "sony ch720n", "lightweight headphones", "travel on budget"],
+      "verifiedUseCases": ["Daily Bus/Metro Commute", "Study Sessions", "Casual Listening"]
+    },
+    "compatibleProducts": ["Hard Shell Case", "65W GaN Charger"],
+    "crossSellIds": ["prod_acc_05", "prod_acc_02"]
+  },
+  {
+    "id": "prod_ph_01",
+    "name": "OnePlus 12R 5G",
+    "category": "smartphone",
+    "merchant": "OnePlus Flagship Store",
+    "price": 39999,
+    "originalPrice": 42999,
+    "rating": 4.7,
+    "reviewCount": 3200,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 25,
+    "warranty": "12 Months Official Warranty",
+    "returnPolicy": "14 Days Replacement",
+    "offers": "Free 100W SUPERVOOC Charger in Box",
+    "bestFor": ["Flagship Gaming", "100W Fast Charge", "All-Day Heavy Use"],
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "processor": "Snapdragon 8 Gen 2 (4nm Flagship)",
+      "ram": "16GB LPDDR5X",
+      "ramGb": 16,
+      "storage": "256GB UFS 3.1",
+      "storageGb": 256,
+      "camera": "50MP Sony IMX890 OIS + 8MP Ultra-wide + 2MP Macro",
+      "display": "6.78\" 1.5K ProXDR 120Hz LTPO4 AMOLED",
+      "battery": "5500mAh with 100W SUPERVOOC Charger in Box",
+      "os": "OxygenOS 14 (Android 14)"
+    },
+    "tags": ["performance", "camera", "battery", "fast-charging", "gaming", "flagship-killer"],
+    "personaFit": ["power user", "mobile gamer", "photographer on budget", "tech enthusiast"],
+    "keyHighlights": [
+      "Snapdragon 8 Gen 2 flagship processor delivers 60fps locked gaming",
+      "50MP Sony OIS sensor captures crisp 4K low-light photos",
+      "100W charging fills massive 5500mAh battery to 100% in 26 minutes",
+      "Gorgeous 4500-nit peak brightness 1.5K curved AMOLED display"
+    ],
+    "strengths": {
+      "camera": 92,
+      "performance": 98,
+      "battery": 97,
+      "gaming": 96,
+      "value": 97
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 99,
+      "semanticKeywords": ["phone under 40000", "oneplus 12r", "fast charging", "sony imx890", "pubg 90fps", "flagship performance"],
+      "verifiedUseCases": ["Heavy Gaming", "Night Photography", "All-day Heavy Usage"]
+    },
+    "compatibleProducts": ["Spigen Rugged Armor Case", "65W GaN Charger"],
+    "crossSellIds": ["prod_acc_06", "prod_acc_02"]
+  },
+  {
+    "id": "prod_acc_01",
+    "name": "Wireless Ergonomic Mouse",
+    "category": "accessory",
+    "merchant": "Logitech Official",
+    "price": 999,
+    "originalPrice": 1499,
+    "rating": 4.8,
+    "reviewCount": 3400,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 80,
+    "warranty": "12 Months Warranty",
+    "returnPolicy": "14 Days Return",
+    "offers": "Bundle Discount Available",
+    "bestFor": ["Comfortable Coding", "Wrist Strain Relief", "Office Work"],
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "sensor": "High Precision Optical Sensor (1600 DPI)",
+      "buttons": "Silent Click Technology (90% reduction)",
+      "connectivity": "2.4GHz Wireless Nano Receiver + Bluetooth",
+      "battery": "18 Months Battery Life (1x AA included)"
+    },
+    "tags": ["mouse", "wireless", "coding", "ergonomic", "accessory"],
+    "personaFit": ["coder", "student", "office worker"],
+    "keyHighlights": [
+      "90% silent click design for distraction-free coding",
+      "Contoured ergonomic shape reduces forearm muscle strain",
+      "Instant plug-and-play USB & Bluetooth pairing"
+    ],
+    "strengths": {
+      "coding": 98,
+      "comfort": 96,
+      "value": 98
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 98,
+      "semanticKeywords": ["wireless mouse", "coding mouse", "silent mouse", "under 1000"],
+      "verifiedUseCases": ["IDE Navigation", "Daily Work"]
+    }
+  },
+  {
+    "id": "prod_acc_07",
+    "name": "Aluminum Ergonomic Laptop Stand",
+    "category": "accessory",
+    "merchant": "DeskPro Accessories",
+    "price": 1499,
+    "originalPrice": 2299,
+    "rating": 4.7,
+    "reviewCount": 1620,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 65,
+    "warranty": "12 Months Warranty",
+    "returnPolicy": "14 Days Return",
+    "offers": "Flat 35% Off on Laptop Bundle",
+    "bestFor": ["Neck Posture Alignment", "Laptop Cooling Airflow"],
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "material": "Aviation-Grade Anodized Aluminum Alloy",
+      "adjustability": "6 Adjustable Height Angles (15° to 45°)",
+      "cooling": "Open hollow base for 40% better heat dissipation",
+      "portability": "Collapsible folding design with velvet pouch"
+    },
+    "tags": ["laptop-stand", "aluminum", "cooling", "ergonomic", "posture"],
+    "personaFit": ["coder", "student", "remote worker"],
+    "keyHighlights": [
+      "Elevates screen to eye level to prevent cervical spine fatigue",
+      "Keeps high-performance laptops cool during compilation",
+      "Anti-slip silicone pads prevent laptop scratching"
+    ],
+    "strengths": {
+      "coding": 97,
+      "comfort": 98,
+      "value": 95
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 97,
+      "semanticKeywords": ["laptop stand", "desk setup", "ergonomic stand", "cooling riser"],
+      "verifiedUseCases": ["Desk Workstation", "Posture Correction"]
+    }
+  },
+  {
+    "id": "prod_acc_08",
+    "name": "Water-Resistant Commute Laptop Bag",
+    "category": "accessory",
+    "merchant": "UrbanGear Bags",
+    "price": 1299,
+    "originalPrice": 1999,
+    "rating": 4.6,
+    "reviewCount": 2100,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 90,
+    "warranty": "12 Months Warranty",
+    "returnPolicy": "14 Days Return",
+    "offers": "Special ₹500 Bundle Rebate",
+    "bestFor": ["Daily College Commute", "Rain Protection", "Travel"],
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "capacity": "22 Liters with dedicated 15.6\" padded laptop compartment",
+      "fabric": "Water-repellent 900D Oxford fabric with SBS zippers",
+      "comfort": "Ergonomic breathable mesh shoulder straps and luggage strap"
+    },
+    "tags": ["laptop-bag", "backpack", "water-resistant", "college", "travel"],
+    "personaFit": ["student", "commuter", "traveler"],
+    "keyHighlights": [
+      "Thick memory foam cushion shields laptop against accidental drops",
+      "Water-repellent exterior keeps electronics dry during sudden rain",
+      "Multiple organized pockets for charger, mouse, and stationery"
+    ],
+    "strengths": {
+      "travel": 98,
+      "value": 97
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 96,
+      "semanticKeywords": ["laptop backpack", "waterproof bag", "college backpack", "under 1500"],
+      "verifiedUseCases": ["Campus Commute", "Travel Protection"]
+    }
+  },
+  {
+    "id": "prod_acc_02",
+    "name": "Anker 735 65W GaN Fast Charger",
+    "category": "accessory",
+    "merchant": "Anker Official Hub",
+    "price": 3499,
+    "originalPrice": 4999,
+    "rating": 4.8,
+    "reviewCount": 1820,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 40,
+    "warranty": "18 Months Warranty",
+    "returnPolicy": "14 Days Return",
+    "offers": "20% Bundle Discount",
+    "bestFor": ["One-Charger Travel", "Fast Charging", "Desk Minimalism"],
+    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "power": "65W High-Speed GaNPrime Output",
+      "ports": "2x USB-C + 1x USB-A (PowerIQ 4.0 Dynamic Distribution)",
+      "size": "53% smaller than standard 67W MacBook brick",
+      "protection": "ActiveShield 2.0 temperature monitoring 3,000,000 times/day"
+    },
+    "tags": ["travel-charger", "gan", "fast-charge", "laptop-charger", "compact"],
+    "personaFit": ["traveler", "coder", "college student", "commuter"],
+    "keyHighlights": [
+      "Charge Laptop, Phone, and Earbuds simultaneously from one tiny outlet",
+      "53% smaller than standard manufacturer charging bricks",
+      "Dynamic PowerIQ balances power intelligently between connected devices"
+    ],
+    "strengths": {
+      "travel": 99,
+      "value": 95
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 98,
+      "semanticKeywords": ["gan charger", "65w charger", "anker 735", "usb c laptop charger", "lightweight charger"],
+      "verifiedUseCases": ["One-charger Travel", "Minimalist Desk Setup"]
+    }
+  },
+  {
+    "id": "prod_acc_05",
+    "name": "Hard Shell Protective Headphone Case",
+    "category": "accessory",
+    "merchant": "TravelArmor Store",
+    "price": 1299,
+    "originalPrice": 1999,
+    "rating": 4.7,
+    "reviewCount": 890,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 50,
+    "warranty": "12 Months Warranty",
+    "returnPolicy": "14 Days Return",
+    "offers": "20% Bundle Discount",
+    "bestFor": ["Headphone Protection", "Backpack Travel"],
+    "image": "https://images.unsplash.com/photo-1584679109597-c656b19974c9?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "material": "Shockproof EVA hard-shell exterior with waterproof zipper",
+      "interior": "Velvet-lined shock absorbent memory foam cushion with cable pouch",
+      "fit": "Universal fit for Sony XM5/XM4, Bose, Sennheiser, Marshall"
+    },
+    "tags": ["headphone-case", "protection", "travel-gear", "waterproof"],
+    "personaFit": ["frequent traveler", "audiophile"],
+    "keyHighlights": [
+      "Guards expensive headphones from accidental crushing in backpacks",
+      "Integrated mesh pocket keeps aux cords and charging cables organized"
+    ],
+    "strengths": {
+      "travel": 99,
+      "value": 98
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 96,
+      "semanticKeywords": ["sony xm5 case", "hard headphone case", "travel pouch", "eva shockproof"],
+      "verifiedUseCases": ["Backpack Travel", "Luggage Storage"]
+    }
+  },
+  {
+    "id": "prod_acc_06",
+    "name": "Spigen Rugged Armor Case + Glass Shield",
+    "category": "accessory",
+    "merchant": "Spigen Official",
+    "price": 1499,
+    "originalPrice": 2499,
+    "rating": 4.8,
+    "reviewCount": 6700,
+    "deliveryDays": 1,
+    "deliveryRange": "Next-Day Delivery",
+    "stock": 100,
+    "warranty": "12 Months Warranty",
+    "returnPolicy": "14 Days Return",
+    "offers": "25% Bundle Discount",
+    "bestFor": ["Phone Drop Protection", "Scratch Prevention"],
+    "image": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&auto=format&fit=crop&q=80",
+    "specs": {
+      "protection": "Air Cushion Technology (Military Grade Drop Tested)",
+      "glass": "9H Hardness Oleophobic Tempered Glass Screen Protector",
+      "finish": "Matte carbon fiber accents with tactile button response"
+    },
+    "tags": ["phone-case", "screen-protector", "protection", "drop-proof"],
+    "personaFit": ["smartphone buyer", "active outdoors"],
+    "keyHighlights": [
+      "Patented Air Cushion corners absorb heavy drops on concrete",
+      "Fingerprint-resistant oleophobic coating keeps screen crystal clear"
+    ],
+    "strengths": {
+      "value": 97
+    },
+    "agenticMetadata": {
+      "intentReadinessScore": 97,
+      "semanticKeywords": ["spigen case", "tempered glass 9h", "phone protection bundle", "shockproof cover"],
+      "verifiedUseCases": ["Daily Phone Protection", "Drop Prevention"]
+    }
+  }
+]
