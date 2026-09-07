@@ -1,5 +1,9 @@
 # NEXA AI Agent
 
+## 🌐 Live Demo
+
+🚀 **View the live website here:**
+https://kritika-76.github.io/NEXA-AI-AGENT/
 ## Overview
 NEXA is an AI-powered agentic commerce solution designed to help customers discover suitable products through a conversational experience while helping merchants understand customer intent and identify revenue opportunities.
 
